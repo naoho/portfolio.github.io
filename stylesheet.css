@@ -316,6 +316,7 @@ footer p {
   color: white;
   text-align: center;
   padding-bottom: 30px;
+  font-size: 26px;
 }
 .footer__list a:hover {
   opacity: 0.8;
