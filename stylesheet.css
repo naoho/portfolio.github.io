@@ -351,9 +351,9 @@ footer p {
     display: block;
   }
   .works__img img {
-    margin: 0 5vw;
-    width: 90vw;
-    height: 60vw;
+    margin: 0 15vw;
+    width: 70vw;
+    height: 50vw;
   }
   }
   @media (max-width: 800px) {
