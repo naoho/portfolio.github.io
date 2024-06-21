@@ -26,12 +26,10 @@ body {
 
 /*ヘッダー
 ----------------------------*/
-header {
-}
 .header__head {
   display: flex;
   align-items: center;
-  width: 1000px;
+  max-width: 1000px;
   justify-content: space-between;
   margin: 50px auto;
 }
@@ -47,7 +45,7 @@ header {
 }
 .header__body {
   display: flex;
-  width: 1000px;
+  max-width: 1000px;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -69,7 +67,7 @@ header {
   font-size: 40px;
 }
 main {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .main__contents {
@@ -89,9 +87,12 @@ main {
 }
 .service__wrapper {
   display: flex;
-  width: 700px;
+  max-width: 700px;
   margin: 70px auto;
   align-items: center;
+}
+.service__invisible {
+  display: none;
 }
 
 /*WORKS
@@ -321,8 +322,84 @@ footer p {
   color: white;
   text-align: center;
   padding-bottom: 30px;
-  font-size: 26px;
+  font-size: 20px;
 }
 .footer__list a:hover {
   opacity: 0.8;
 }
+
+/*１０００px以下*/
+@media (max-width: 1000px) {
+  header{
+    margin: 0 40px;
+  }
+  .main-img {
+    width: 50vw;
+  }
+  .header__body--left h1 {
+    font-size: 5vw;
+  }
+  .works {
+    margin: 0 auto;
+  }
+  .works__item p {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .works__wrapper {
+    display: block;
+  }
+  .works__img img {
+    margin: 0 5vw;
+    width: 90vw;
+    height: 60vw;
+  }
+  }
+  @media (max-width: 800px) {
+    .header__list {
+      display: none;
+    }
+    .header__body--left {
+      margin: 3vw 0;
+    }
+    .service__img {
+      display: none;
+    }
+    .service__img02 {
+      display: none;
+    }
+    .service__invisible {
+      display: block;
+      width: 30vw;
+      margin: 20px auto;
+    }
+    .small {
+      width: 24vw;
+    }
+    .service__wrapper {
+      display: block;
+      text-align: center;
+    }
+    .service__content p {
+      margin: 30px 10vw;
+    }
+    .profile__wrapper {
+      display: block;
+      text-align: center;
+    }
+    .profile__wrapper img {
+      margin-left: 0;
+    }
+    .profile__content {
+      width: 90%;
+      text-align: center;
+      margin: 0 5vw;
+    }
+    .footer__list {
+      display: none;
+    }
+    .footer__wrapper {
+      height: 35px;
+    }
+  }
