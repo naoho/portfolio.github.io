@@ -123,6 +123,7 @@ main {
 .more-works__img {
   cursor: pointer;
   overflow: hidden;
+  text-align: center;
 }
 .more-works__img img{
   width: 450px;  
