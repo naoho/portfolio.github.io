@@ -149,8 +149,7 @@ main {
   box-sizing: inherit;
 }
 .button__wrapper {
-  width: 200px;
-  margin: 100px auto 200px;
+  text-align: center;
 }
 .btn,
 a.btn,
