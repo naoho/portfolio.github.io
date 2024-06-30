@@ -75,7 +75,9 @@ main {
 }
 /*SERVICE
 ----------------------------*/
-
+.service {
+  padding-top: 50px;
+}
 .service__img {
   width: 200px;
   margin-right: 70px;
